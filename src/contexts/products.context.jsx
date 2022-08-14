@@ -7,20 +7,9 @@ export const ProductsContext = createContext({
 });
 
 export const ProductsProvider = ({ children }) => {
-  const [products, setProducts] = useState(PRODUCTS);
+  const [products] = useState(PRODUCTS);
 
   const value = { products };
-
-  // useEffect(() => {
-  //   const unsubscribe = onAuthStateChangedListener(user => {
-  //     if (user) {
-  //       createUserDocumentFromAuth(user);
-  //     }
-  //     setCurrentUser(user); // doesn't execute until unmount
-  //   });
-
-  //   return unsubscribe; // return === ComponentWillUnmount (class)
-  // }, []);
 
   return (
     <ProductsContext.Provider value={value}>
