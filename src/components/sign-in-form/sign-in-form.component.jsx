@@ -42,7 +42,7 @@ const SignInForm = () => {
           alert('No user associated with this email');
           break;
         default:
-          console.log(error);
+          console.log('error: ', error);
       }
     }
   };
