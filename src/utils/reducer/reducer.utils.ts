@@ -1,4 +1,3 @@
-import { act } from 'react-dom/test-utils';
 import { AnyAction } from 'redux';
 
 type Matchable<AC extends () => AnyAction> = AC & {
