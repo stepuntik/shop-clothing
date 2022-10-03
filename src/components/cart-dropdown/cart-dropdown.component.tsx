@@ -1,3 +1,5 @@
+import { useCallback } from 'react';
+
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -16,15 +18,15 @@ const CartDropdown = () => {
   const cartItems = useSelector(selectCartItems);
   const navigate = useNavigate();
 
-  const goToCheckoutHandler = () => {
+  const goToCheckoutHandler = useCallback(() => {
     navigate('/checkout');
-  };
+  }, [navigate]); //navigate is not going to change, but still included it to avoid the warning
 
   return (
     <CartDropdownContainer>
       <CartItems>
         {cartItems.length ? (
-          cartItems.map(item => <CartItem key={item.id} cartItem={item} />)
+          cartItems.map((item) => <CartItem key={item.id} cartItem={item} />)
         ) : (
           <EmptyMessage>Your cart is empty</EmptyMessage>
         )}

@@ -11,8 +11,6 @@ export const SignInContainer = styled.div`
 `;
 
 export const ButtonsContainer = styled.div`
-  .buttons-container {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 `;
