@@ -1,7 +1,5 @@
 # Shop Clothing
 
-![Shop Clothing](shop-clothing.jpg)
-
 The Shop Clothing project is an e-commerce web application that offers a wide range of stylish clothing and accessories for online shoppers. This repository contains the complete source code for the Shop Clothing app, serving as a foundation for building your own e-commerce platform.
 
 ## Features
