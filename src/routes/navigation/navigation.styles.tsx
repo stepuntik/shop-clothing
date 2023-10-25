@@ -18,7 +18,7 @@ export const NavigationContainer = styled.div`
 export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;
-  padding: 25px;
+  padding: 15px;
 
   @media screen and (max-width: 800px) {
     width: 50px;
@@ -47,4 +47,13 @@ export const NavLink = styled(NL)`
   &.active {
     font-weight: 900;
   }
+`;
+
+export const Greeting = styled.h2`
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  align-self: center;
+  margin-left: auto;
 `;

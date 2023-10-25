@@ -15,13 +15,17 @@ import {
   LogoContainer,
   NavLinks,
   NavLink,
+  Greeting,
 } from './navigation.styles';
 
 const Navigation = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
-  const navigate = useNavigate();
+
+  console.log('currentuser', currentUser?.displayName);
 
   const signOutUser = () => {
     dispatch(signOutStart());
@@ -34,6 +38,9 @@ const Navigation = () => {
         <LogoContainer to="/">
           <CrwnLogo className="logo" />
         </LogoContainer>
+        <Greeting>
+          Welcome, {currentUser ? currentUser.displayName : 'guest'}!
+        </Greeting>
         <NavLinks>
           <NavLink to="/shop">SHOP</NavLink>
 
