@@ -1,12 +1,16 @@
 import { useCallback } from 'react';
-
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import Button from '../button/button.component';
 
 import CartItem from '../cart-item/cart-item.component';
-import { selectCartItems } from '../../store/cart/cart.selector';
+import {
+  selectCartItems,
+  selectIsCartOpen,
+} from '../../store/cart/cart.selector';
+
+import { setIsCartOpen } from '../../store/cart/cart.action';
 
 import {
   CartDropdownContainer,
@@ -15,12 +19,16 @@ import {
 } from './cart-dropdown.styles';
 
 const CartDropdown = () => {
+  const dispatch = useDispatch();
+
   const cartItems = useSelector(selectCartItems);
+  const isCartOpen = useSelector(selectIsCartOpen);
   const navigate = useNavigate();
 
   const goToCheckoutHandler = useCallback(() => {
+    dispatch(setIsCartOpen(!isCartOpen));
     navigate('/checkout');
-  }, [navigate]); //navigate is not going to change, but still included it to avoid the warning
+  }, [navigate]); // eslint-disable-line
 
   return (
     <CartDropdownContainer>

@@ -29,6 +29,7 @@ export type ActionWithPayload<T, P> = {
 };
 
 export type Action<T> = {
+  [x: string]: any;
   type: T;
 };
 
