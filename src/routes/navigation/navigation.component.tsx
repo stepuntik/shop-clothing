@@ -13,6 +13,7 @@ import { signOutStart } from '../../store/user/user.action';
 import {
   NavigationContainer,
   LogoContainer,
+  LogoLink,
   NavLinks,
   NavLink,
   Greeting,
@@ -33,11 +34,13 @@ const Navigation = () => {
   return (
     <Fragment>
       <NavigationContainer>
-        <LogoContainer to="/">
-          <CrwnLogo className="logo" />
+        <LogoContainer>
+          <LogoLink to="/">
+            <CrwnLogo className="logo" />
+          </LogoLink>
         </LogoContainer>
         <Greeting>
-          Welcome, {currentUser ? currentUser.displayName : 'guest'}!
+          Welcome{currentUser ? `, ${currentUser.displayName}` : ', guest'}!
         </Greeting>
         <NavLinks>
           <NavLink to="/shop">SHOP</NavLink>

@@ -6,7 +6,7 @@ import { selectCartItems } from '../../store/cart/cart.selector';
 import { addItemToCart } from '../../store/cart/cart.action';
 
 import {
-  ProductCartContainer,
+  ProductCardContainer,
   Footer,
   Name,
   Price,
@@ -28,7 +28,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
   return (
-    <ProductCartContainer>
+    <ProductCardContainer>
       <img src={imageUrl} alt={name} />
       <Footer>
         <Name>{name}</Name>
@@ -40,7 +40,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
       >
         Add to cart
       </Button>
-    </ProductCartContainer>
+    </ProductCardContainer>
   );
 };
 

@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { FormEvent } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { StripeCardElement } from '@stripe/stripe-js';
 import { useSelector } from 'react-redux';
@@ -23,14 +23,12 @@ const PaymentForm = () => {
   const elements = useElements();
   const amount = useSelector(selectCartTotal);
   const currentUser = useSelector(selectCurrentUser);
-  const [isProcessingPayment, setIsProcessingPayment] = useState(false);
 
   const paymentHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!stripe || !elements) return;
 
-    setIsProcessingPayment(true);
     const response = await fetch('/.netlify/functions/create-payment-intent', {
       method: 'post',
       headers: {
@@ -56,8 +54,6 @@ const PaymentForm = () => {
       },
     });
 
-    setIsProcessingPayment(false);
-
     if (paymentResult.error) {
       alert(paymentResult.error.message);
     } else {
@@ -74,7 +70,7 @@ const PaymentForm = () => {
         <CardElement />
         <PaymentButton
           buttonType={BUTTON_TYPE_CLASSES.inverted}
-          isLoading={isProcessingPayment}
+          isLoading={false}
         >
           Pay now
         </PaymentButton>
