@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
@@ -16,10 +17,22 @@ const CartIcon = () => {
   const cartCount = useSelector(selectCartCount);
   const isCartOpen = useSelector(selectIsCartOpen);
 
+  const [isPopping, setIsPopping] = useState(false);
+
   const toggleIsCartOpen = () => dispatch(setIsCartOpen(!isCartOpen));
 
+  useEffect(() => {
+    if (cartCount > 0) {
+      setIsPopping(true);
+
+      setTimeout(() => {
+        setIsPopping(false);
+      }, 200);
+    }
+  }, [cartCount]);
+
   return (
-    <CartIconContainer onClick={toggleIsCartOpen}>
+    <CartIconContainer popping={isPopping} onClick={toggleIsCartOpen}>
       <ShoppingIcon className="shopping-icon" />
       <ItemCount>{cartCount}</ItemCount>
     </CartIconContainer>

@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const CartIconContainer = styled.div`
+interface CartIconProps {
+  popping: boolean;
+}
+
+export const CartIconContainer = styled.div<CartIconProps>`
   width: 45px;
   height: 45px;
   position: relative;
@@ -8,6 +12,9 @@ export const CartIconContainer = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  ${({ popping }) => popping && `transform: scale(1.5);`}
 
   svg {
     width: 24px;
