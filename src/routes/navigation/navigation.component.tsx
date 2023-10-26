@@ -25,8 +25,6 @@ const Navigation = () => {
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
 
-  console.log('currentuser', currentUser?.displayName);
-
   const signOutUser = () => {
     dispatch(signOutStart());
     navigate('/');

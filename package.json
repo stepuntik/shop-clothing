@@ -1,5 +1,6 @@
 {
   "name": "crwn-clothing",
+  "homepage": "https://stepuntik.github.io/shop-clothing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,6 +37,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
+    "deploy": "gh-pages -d build",
     "test": "jest",
     "eject": "react-scripts eject"
   },
@@ -58,6 +60,7 @@
     ]
   },
   "devDependencies": {
-    "@types/redux-logger": "^3.0.9"
+    "@types/redux-logger": "^3.0.9",
+    "gh-pages": "^6.0.0"
   }
 }
