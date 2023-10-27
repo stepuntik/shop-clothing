@@ -22,6 +22,14 @@ export const ImageContainer = styled.div`
 
 export const BaseSpan = styled.span`
   width: 23%;
+
+  &:nth-last-child(2) {
+    width: 10%;
+  }
+
+  &:last-child {
+    width: 16%;
+  }
 `;
 
 export const Quantity = styled(BaseSpan)`
@@ -36,7 +44,13 @@ export const Value = styled.span`
   margin: 0 10px;
 `;
 
+export const Price = styled(BaseSpan)`
+  margin: 0 10px;
+  text-align: center;
+`;
+
 export const RemoveButton = styled.div`
   padding-left: 12px;
   cursor: pointer;
+  margin-left: auto;
 `;

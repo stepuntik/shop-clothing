@@ -8,9 +8,20 @@ export const SignInContainer = styled.div`
   h2 {
     margin: 10px 0;
   }
+
+  @media (max-width: 470px) {
+    width: 90%;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 470px) {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+  }
 `;

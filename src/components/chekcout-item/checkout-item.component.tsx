@@ -15,6 +15,7 @@ import {
   Quantity,
   Arrow,
   Value,
+  Price,
   RemoveButton,
 } from './chekcout-item.styles';
 
@@ -46,7 +47,7 @@ const CheckoutItem: FC<CheckoutItemProps> = memo(({ cartItem }) => {
         <Value>{quantity}</Value>
         <Arrow onClick={addItemHandler}>&#10095;</Arrow>
       </Quantity>
-      <BaseSpan>{price}</BaseSpan>
+      <Price>{price}</Price>
       <RemoveButton onClick={clearItemHandler}>&#10005;</RemoveButton>
     </CheckoutItemContainer>
   );

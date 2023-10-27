@@ -7,6 +7,18 @@ export const CheckoutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+
+  @media (max-width: 900px) {
+    width: 65%;
+  }
+
+  @media (max-width: 650px) {
+    width: 75%;
+  }
+
+  @media (max-width: 470px) {
+    width: 95%;
+  }
 `;
 
 export const CheckoutHeader = styled.div`
@@ -21,8 +33,14 @@ export const HeaderBlock = styled.div`
   text-transform: capitalize;
   width: 23%;
 
+  &:nth-last-child(2) {
+    width: 15%;
+    text-align: center;
+  }
+
   &:last-child {
-    width: 8%;
+    width: 16%;
+    text-align: end;
   }
 `;
 

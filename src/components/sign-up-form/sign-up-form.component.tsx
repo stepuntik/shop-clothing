@@ -5,8 +5,9 @@ import { useDispatch } from 'react-redux';
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
 
-import { SignUpContainer } from './sign-up-form.styles';
 import { signUpStart } from '../../store/user/user.action';
+
+import { SignUpContainer, SignUpButtonContainer } from './sign-up-form.styles';
 
 const defaultFormFields = {
   displayName: '',
@@ -90,7 +91,9 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <Button type="submit">Sign Up</Button>
+        <SignUpButtonContainer>
+          <Button type="submit">Sign Up</Button>
+        </SignUpButtonContainer>
       </form>
     </SignUpContainer>
   );
