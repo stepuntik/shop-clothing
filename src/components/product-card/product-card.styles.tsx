@@ -13,6 +13,7 @@ export const ProductCardContainer = styled.div`
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
+    opacity: 1;
   }
 
   button {
@@ -31,6 +32,25 @@ export const ProductCardContainer = styled.div`
     button {
       opacity: 0.85;
       display: flex;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+
+    button {
+      opacity: 0.85;
+      display: flex;
+    }
+
+    &:active {
+      button {
+        opacity: 0.85;
+      }
     }
   }
 `;

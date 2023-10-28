@@ -53,4 +53,9 @@ export const RemoveButton = styled.div`
   padding-left: 12px;
   cursor: pointer;
   margin-left: auto;
+
+  @media (max-width: 470px) {
+    margin: 0 auto;
+    padding-left: 0;
+  }
 `;

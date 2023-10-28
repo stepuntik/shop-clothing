@@ -14,6 +14,7 @@ export const CheckoutContainer = styled.div`
 
   @media (max-width: 650px) {
     width: 75%;
+    margin-top: 0;
   }
 
   @media (max-width: 470px) {

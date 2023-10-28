@@ -16,8 +16,4 @@ export const AuthenticationContainer = styled.div`
     gap: 60px;
     width: 100%;
   }
-
-  /* @media (max-width: 470px) {
-    background-color: black;
-  } */
 `;
