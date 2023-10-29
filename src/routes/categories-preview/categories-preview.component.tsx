@@ -28,7 +28,7 @@ const CategoriesPreview = () => {
         })
       )}
       <MainPageButton onClick={() => navigate('/')}>
-        Go to main page
+        to main page
       </MainPageButton>
     </>
   );

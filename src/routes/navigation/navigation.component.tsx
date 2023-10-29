@@ -26,6 +26,8 @@ const Navigation = () => {
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
 
+  const firstName = currentUser?.displayName.split(' ')[0];
+
   const signOutUser = () => {
     dispatch(signOutStart());
     navigate('/');
@@ -40,9 +42,7 @@ const Navigation = () => {
           </LogoLink>
         </LogoContainer>
         <Greeting>
-          {currentUser
-            ? `Welcome, ${currentUser.displayName}!`
-            : 'Welcome, guest!'}
+          {currentUser ? `Welcome, ${firstName}!` : 'Welcome, Guest!'}
         </Greeting>
         <NavLinks>
           <NavLink to="/shop">SHOP</NavLink>

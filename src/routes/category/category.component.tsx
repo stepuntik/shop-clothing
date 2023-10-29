@@ -44,7 +44,7 @@ const Category = () => {
             ))}
         </CategoryContainer>
       )}
-      <BackPageButton onClick={() => navigate('/shop')}>Go back</BackPageButton>
+      <BackPageButton onClick={() => navigate(-1)}>Go back</BackPageButton>
     </Fragment>
   );
 };
