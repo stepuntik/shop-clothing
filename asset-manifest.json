@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/shop-clothing/static/css/main.34409594.css",
-    "main.js": "/shop-clothing/static/js/main.77da435c.js",
+    "main.js": "/shop-clothing/static/js/main.c04a2656.js",
     "static/js/940.1cb63fc8.chunk.js": "/shop-clothing/static/js/940.1cb63fc8.chunk.js",
-    "static/js/348.aca6798f.chunk.js": "/shop-clothing/static/js/348.aca6798f.chunk.js",
-    "static/js/737.9a0d67e2.chunk.js": "/shop-clothing/static/js/737.9a0d67e2.chunk.js",
-    "static/js/133.4790e5f4.chunk.js": "/shop-clothing/static/js/133.4790e5f4.chunk.js",
-    "static/js/238.0762aa9b.chunk.js": "/shop-clothing/static/js/238.0762aa9b.chunk.js",
+    "static/js/348.efba4e09.chunk.js": "/shop-clothing/static/js/348.efba4e09.chunk.js",
+    "static/js/737.f95dfd70.chunk.js": "/shop-clothing/static/js/737.f95dfd70.chunk.js",
+    "static/js/133.1eb997f4.chunk.js": "/shop-clothing/static/js/133.1eb997f4.chunk.js",
+    "static/js/238.fab03f02.chunk.js": "/shop-clothing/static/js/238.fab03f02.chunk.js",
     "static/media/shopping-bag.svg": "/shop-clothing/static/media/shopping-bag.a688874f6f1507316bdfa420328a4a53.svg",
     "static/media/crown.svg": "/shop-clothing/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
     "index.html": "/shop-clothing/index.html",
     "main.34409594.css.map": "/shop-clothing/static/css/main.34409594.css.map",
-    "main.77da435c.js.map": "/shop-clothing/static/js/main.77da435c.js.map",
+    "main.c04a2656.js.map": "/shop-clothing/static/js/main.c04a2656.js.map",
     "940.1cb63fc8.chunk.js.map": "/shop-clothing/static/js/940.1cb63fc8.chunk.js.map",
-    "348.aca6798f.chunk.js.map": "/shop-clothing/static/js/348.aca6798f.chunk.js.map",
-    "737.9a0d67e2.chunk.js.map": "/shop-clothing/static/js/737.9a0d67e2.chunk.js.map",
-    "133.4790e5f4.chunk.js.map": "/shop-clothing/static/js/133.4790e5f4.chunk.js.map",
-    "238.0762aa9b.chunk.js.map": "/shop-clothing/static/js/238.0762aa9b.chunk.js.map"
+    "348.efba4e09.chunk.js.map": "/shop-clothing/static/js/348.efba4e09.chunk.js.map",
+    "737.f95dfd70.chunk.js.map": "/shop-clothing/static/js/737.f95dfd70.chunk.js.map",
+    "133.1eb997f4.chunk.js.map": "/shop-clothing/static/js/133.1eb997f4.chunk.js.map",
+    "238.fab03f02.chunk.js.map": "/shop-clothing/static/js/238.fab03f02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34409594.css",
-    "static/js/main.77da435c.js"
+    "static/js/main.c04a2656.js"
   ]
 }
