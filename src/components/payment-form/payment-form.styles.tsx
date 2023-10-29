@@ -9,15 +9,10 @@ export const PaymentFormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
-  /* @media (max-width: 650px) {
-    height: 100px;
-  } */
 `;
 
 export const FormContainer = styled.form`
   width: 100%;
-  /* height: 100px; */
 `;
 
 export const PaymentButton = styled(Button)`
