@@ -18,6 +18,7 @@ import {
   NavLink,
   Greeting,
 } from './navigation.styles';
+import Spinner from '../../components/spinner/spinner.component';
 
 const Navigation = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,8 @@ const Navigation = () => {
     navigate('/');
   };
 
+  const isLoading = currentUser === null;
+
   return (
     <Fragment>
       <NavigationContainer>
@@ -40,7 +43,11 @@ const Navigation = () => {
           </LogoLink>
         </LogoContainer>
         <Greeting>
-          Welcome{currentUser ? `, ${currentUser.displayName}` : ', guest'}!
+          {isLoading ? (
+            <Spinner />
+          ) : (
+            `Welcome, ${currentUser?.displayName || 'guest'}!`
+          )}
         </Greeting>
         <NavLinks>
           <NavLink to="/shop">SHOP</NavLink>
