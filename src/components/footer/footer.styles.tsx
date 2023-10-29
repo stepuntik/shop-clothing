@@ -12,7 +12,7 @@ export const ConnectSection = styled.section`
 `;
 
 export const StyledHeading = styled.h3`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 100;
   text-transform: uppercase;
   margin: 14px 0;
@@ -23,7 +23,7 @@ export const SocialLinks = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-size: 24px;
+  font-size: 22px;
 `;
 
 export const FooterLink = styled.a`

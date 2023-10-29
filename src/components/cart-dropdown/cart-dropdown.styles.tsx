@@ -32,6 +32,7 @@ export const EmptyMessage = styled.span`
 `;
 
 export const CartItems = styled.div`
+  margin-bottom: 4px;
   max-height: 240px;
   display: flex;
   flex-direction: column;

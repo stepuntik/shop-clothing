@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Button from '../../components/button/button.component';
 
 export const CategoryContainer = styled.div`
   display: grid;
@@ -23,4 +24,8 @@ export const Title = styled.h2`
   font-size: 38px;
   margin: 20px 0;
   text-align: center;
+`;
+
+export const BackPageButton = styled(Button)`
+  margin: 0 auto;
 `;

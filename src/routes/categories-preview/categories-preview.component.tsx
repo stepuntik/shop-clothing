@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import {
   selectCategoriesMap,
@@ -7,10 +8,12 @@ import {
 
 import CategoryPreview from '../../components/category-preview/category-preview.component';
 import Spinner from '../../components/spinner/spinner.component';
+import { MainPageButton } from './categories-preview.styles';
 
 const CategoriesPreview = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -24,6 +27,9 @@ const CategoriesPreview = () => {
           );
         })
       )}
+      <MainPageButton onClick={() => navigate('/')}>
+        Go to main page
+      </MainPageButton>
     </>
   );
 };
