@@ -2,6 +2,8 @@
 
 [Live Demo](https://github.com/stepuntik/shop-clothing)
 
+![Shop Clothing](https://imgpile.com/images/G1Ho8X.png)
+
 Shop Clothing is your one-stop fashion destination, offering a delightful shopping experience with a seamless blend of style and technology. Dive into this open-source project to explore a feature-rich e-commerce application, carefully designed to cater to all your fashion needs.
 
 **Key Highlights:**
