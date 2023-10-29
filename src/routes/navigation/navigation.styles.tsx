@@ -6,7 +6,7 @@ export const NavigationContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 12px;
   background-color: white;
   position: sticky;
   top: 0;
@@ -14,17 +14,18 @@ export const NavigationContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     height: 60px;
-    padding: 10px;
   }
 `;
 
 export const LogoContainer = styled.div`
+  -webkit-tap-highlight-color: transparent;
+
   height: 100%;
   width: 70px;
-  padding: 15px;
+  padding: 10px;
 
   @media screen and (max-width: 800px) {
-    padding: 0;
+    padding: 8px;
   }
 `;
 
@@ -38,10 +39,7 @@ export const Greeting = styled.h2`
   font-weight: 100;
   text-transform: uppercase;
   align-self: center;
-
-  @media screen and (max-width: 800px) {
-    margin-right: auto;
-  }
+  margin-right: auto;
 `;
 
 export const NavLinks = styled.div`

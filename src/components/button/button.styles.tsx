@@ -26,6 +26,21 @@ export const BaseButton = styled.button`
     color: black;
     border: 1px solid black;
   }
+
+  @media (max-width: 900px) {
+    &:hover {
+      background-color: black;
+      color: white;
+      border: none;
+    }
+  }
+
+  &:active {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    -webkit-tap-highlight-color: transparent;
+  }
 `;
 
 export const GoogleSignInButton = styled(BaseButton)`
@@ -47,6 +62,21 @@ export const InvertedButton = styled(BaseButton)`
     background-color: black;
     color: white;
     border: none;
+  }
+
+  @media (max-width: 900px) {
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+
+  &:active {
+    background-color: black;
+    color: white;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
   }
 `;
 

@@ -7,6 +7,8 @@ import { useDispatch } from 'react-redux';
 import Spinner from './components/spinner/spinner.component';
 import { checkUserSession } from './store/user/user.action';
 
+import Footer from './components/footer/footer.component';
+
 const Home = lazy(() => import('./routes/home/home.component'));
 const Navigation = lazy(() =>
   import('./routes/navigation/navigation.component')
@@ -35,6 +37,7 @@ const App = () => {
           <Route path="checkout" element={<Checkout />} />
         </Route>
       </Routes>
+      <Footer />
     </Suspense>
   );
 };
