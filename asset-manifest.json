@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/shop-clothing/static/css/main.34409594.css",
-    "main.js": "/shop-clothing/static/js/main.1fb70abb.js",
+    "main.js": "/shop-clothing/static/js/main.107af105.js",
     "static/js/940.1cb63fc8.chunk.js": "/shop-clothing/static/js/940.1cb63fc8.chunk.js",
-    "static/js/348.c5f09e6f.chunk.js": "/shop-clothing/static/js/348.c5f09e6f.chunk.js",
+    "static/js/348.1bdc6048.chunk.js": "/shop-clothing/static/js/348.1bdc6048.chunk.js",
     "static/js/737.f95dfd70.chunk.js": "/shop-clothing/static/js/737.f95dfd70.chunk.js",
-    "static/js/868.57e88168.chunk.js": "/shop-clothing/static/js/868.57e88168.chunk.js",
+    "static/js/868.560d76ab.chunk.js": "/shop-clothing/static/js/868.560d76ab.chunk.js",
     "static/js/238.fab03f02.chunk.js": "/shop-clothing/static/js/238.fab03f02.chunk.js",
     "static/media/shopping-bag.svg": "/shop-clothing/static/media/shopping-bag.a688874f6f1507316bdfa420328a4a53.svg",
     "static/media/crown.svg": "/shop-clothing/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
     "index.html": "/shop-clothing/index.html",
     "main.34409594.css.map": "/shop-clothing/static/css/main.34409594.css.map",
-    "main.1fb70abb.js.map": "/shop-clothing/static/js/main.1fb70abb.js.map",
+    "main.107af105.js.map": "/shop-clothing/static/js/main.107af105.js.map",
     "940.1cb63fc8.chunk.js.map": "/shop-clothing/static/js/940.1cb63fc8.chunk.js.map",
-    "348.c5f09e6f.chunk.js.map": "/shop-clothing/static/js/348.c5f09e6f.chunk.js.map",
+    "348.1bdc6048.chunk.js.map": "/shop-clothing/static/js/348.1bdc6048.chunk.js.map",
     "737.f95dfd70.chunk.js.map": "/shop-clothing/static/js/737.f95dfd70.chunk.js.map",
-    "868.57e88168.chunk.js.map": "/shop-clothing/static/js/868.57e88168.chunk.js.map",
+    "868.560d76ab.chunk.js.map": "/shop-clothing/static/js/868.560d76ab.chunk.js.map",
     "238.fab03f02.chunk.js.map": "/shop-clothing/static/js/238.fab03f02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34409594.css",
-    "static/js/main.1fb70abb.js"
+    "static/js/main.107af105.js"
   ]
 }
