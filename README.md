@@ -4,7 +4,7 @@
 
 ![Shop Clothing](https://imgpile.com/images/G1Ho8X.png)
 
-Shop Clothing is your one-stop fashion destination, offering a delightful shopping experience with a seamless blend of style and technology. Dive into this open-source project to explore a feature-rich e-commerce application, carefully designed to cater to all your fashion needs.
+Shop Clothing is a sample open-source e-commerce project offering a pleasant shopping experience, featuring a catalog of various kinds of clothes, a cart, and a checkout page with the Stripe payment system. It offers a beautiful responsive design, various methods of authorization (including Google Sign-in), and a local storage feature to keep the items in your cart even if you leave the page.
 
 **Key Highlights:**
 
@@ -27,7 +27,7 @@ Shop Clothing is your one-stop fashion destination, offering a delightful shoppi
 
 ## Features
 
-- **Product Catalog**: Browse through an extensive catalog of clothing and accessories, each with detailed product information, including images, prices, and descriptions.
+- **Product Catalog**: Browse through a catalog of clothing and accessories, each with detailed product information, including images, prices, and descriptions.
 
 - **User Authentication**: Secure user authentication and account management for an enhanced shopping experience.
 
