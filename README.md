@@ -1,6 +1,6 @@
 **Shop Clothing: Your Ultimate Fashion Destination**
 
-[Live Demo](https://github.com/stepuntik/shop-clothing)
+[Live Demo](https://stepuntik.github.io/shop-clothing/)
 
 ![Shop Clothing](https://imgpile.com/images/G1Ho8X.png)
 
